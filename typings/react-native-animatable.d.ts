@@ -111,7 +111,7 @@ export type Animation =
     'zoomOutRight';
 
 interface AnimatableProperties<S extends {}> {
-    animation?: Animation | string;
+    animation?: Animation | string | object;
     duration?: number;
     delay?: number;
     direction?: 'normal' | 'reverse' | 'alternate'| 'alternate-reverse';
